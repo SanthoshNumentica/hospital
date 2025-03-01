@@ -1,0 +1,204 @@
+<body>
+    <div class="form-container">
+        <div class="border">
+            <section>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="width: 25%; padding-top: 30px;">
+                            <img src="https://dental.ssamt.org/api/templates/dental.png" alt="logo" style="width: 150px;">
+                        </td>
+                        <td>
+                            <h2 class="h1   ">SELVIN</h2>
+                            <h4 class="h4">MULTISPECIALITY DENTAL CLINIC & IMPLANT CENTER</h4>
+                        </td>
+                        <td colspan="2" class="head_sec2">
+                            <span class="h2">Rtn.Dr.s.selvinraj</span> B.D.S,M.D.S,<br>DCI Reg.
+                            No-11245<br><br><span class="heading_2">Dr.A.Maria Catherine</span> B.D.S,<br>Dental
+                            Surgeon<br>DCI Reg.No-13121
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <div class="section_2">611, Sankarankovil Mukku, PACR Salai, Rajapalayam-626 117.India. Cell:+91 94880 06608</div>
+            </section>
+
+            <br>
+            <div style="text-align:center;"> <u><b>RECEIPT</b></u></div>
+
+            <section class="section_3 border_bottom">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="no_sec">Receipt No : <b>{receipt_no} </b></td> |
+                        <td class="no_sec">Patient Name : <b>{patient_name} </b></td> |
+                        <td class="no_sec">Patient Id : <b>{patient_id} </b></td> |
+                        <td class="date_sec">Date : <b>{date}</b></td>
+                    </tr>
+                </table>
+            </section>
+
+            <div class="form">
+                <p style="line-height: 40px;padding: 0px 10px;">Received with thanks a sum of Rupees <b>{amount_in_rupees}</b> From <b>{patient_name}({address})</b> towards the dental Treatment of <b>{data}</b> done in our clinic.</p>
+            </div>
+            <section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <p style="display: flex;">UTR Reference No : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Authorised Signature With Seal</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f9;
+    }
+
+    .form-container {
+        width: 210mm;
+        height: 148mm;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .border {
+        margin: 20px;
+        border: 2px solid black;
+    }
+
+    .border_bottom {
+        border-bottom: 2px solid black;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 130px;
+        padding: 20px;
+    }
+
+    .h1 {
+        margin: 0PX;
+        padding-top: 5PX;
+        font-size: 55px;
+        font-family: initial;
+    }
+
+    .h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .h4 {
+        margin: 0PX;
+        font-size: 19PX;
+    }
+
+    .img_sec {
+        width: 25%;
+    }
+
+    .head_sec1 {
+        width: 57%;
+        display: flex;
+    }
+
+    .head_sec2 {
+        width: 40%;
+        line-height: 19px;
+        padding-top: 10px;
+    }
+
+    .heading_2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .section_2 {
+        height: 22px;
+        background-color: black;
+        color: white;
+        padding-left: 10px;
+        padding-top: 2px;
+        text-align: center;
+    }
+
+    .section_3 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .no_sec {
+        align-content: center;
+    }
+
+    .rec_sec {
+        color: white;
+        background-color: black;
+        padding: 5px;
+        margin-left: 100px;
+    }
+
+    .date_sec {
+        align-content: center;
+    }
+
+    .line_sec {
+        display: inline-block;
+        width: 100px;
+        border-bottom: 2px dotted black;
+        margin-left: 5px;
+    }
+
+    .solid_line {
+        display: inline-block;
+        width: 200px;
+        height: 1px;
+        background-color: black;
+        margin-left: 5px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .footer_left {
+        width: 50%;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        form {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

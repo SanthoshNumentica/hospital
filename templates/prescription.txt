@@ -1,0 +1,92 @@
+<div class="container-fluid receipt-main">
+	<div class="row receipt-header">
+		<div class="col-xs-2 col-sm-2 col-md-2">
+			<div class="receipt-left">
+				<img class="img-responsive" alt="logo" src="{logo_src}" style="width: 55px; border-radius: 43px;">
+			</div>
+		</div>
+		<div class="col-xs-8 col-sm-8 col-md-8 text-center">
+			<div class="address text-center">
+				<p class="title">{companyName}</p>
+				<p>{companyAddress},{companyAddress_1}</p>
+				<p class="m-0">{companyAddress_2} - {companyEmail_id} {companyMobile_no}</p>
+			</div>
+		</div>
+		<div class="col-2 text-right">
+			<p class="text-nowrap"><b>Date :</b> {prescription_date}</p>
+		</div>
+	</div>
+	<div class="patient_section">
+		<p style="margin-left:15px;font-size:13px;font-weight:bold;"> {patientName} ({patient_id}),
+			{genderFirstLetter}/{age}</p>
+	</div>
+	<div class="prescription">
+		<h5>℞ </h5>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>s/o</th>
+					<th>Description</th>
+					<th>Frequency</th>
+				</tr>
+			</thead>
+			{prescriptionItem}
+		</table>
+	</div>
+</div>
+<style>
+	.text-danger strong {
+		color: #9f181c;
+	}
+
+	.receipt-main {
+		background: #ffffff none repeat scroll 0 0;
+		border-bottom: 9px solid #1032af;
+		border-top: 9px solid #1032af;
+		padding: 12px 20px !important;
+		position: relative;
+		box-shadow: 0 1px 21px #acacac;
+		color: #333333;
+		font-family: open sans;
+	}
+
+	.address p {
+		margin: 1px !important;
+	}
+
+	p {
+		font-size: small;
+	}
+
+	.title {
+		font-size: large !important;
+		color: rgb(51, 67, 154) !important;
+		margin: 0 !important;
+	}
+
+
+	.receipt-main::after {
+		background: #414143 none repeat scroll 0 0;
+		content: "";
+		height: 5px;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: -13px;
+	}
+
+	.receipt-main thead th {
+		padding: 5px !important;
+	}
+
+	.receipt-main td {
+		font-size: 13px;
+		padding: 5px !important;
+		font-weight: initial !important;
+	}
+
+	.receipt-main td p:last-child {
+		margin: 0;
+		padding: 0;
+	}
+</style>

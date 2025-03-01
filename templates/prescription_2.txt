@@ -1,0 +1,173 @@
+<style>
+    footer {
+      background-color: #f2f2f2;
+      color: black;
+      margin-top: 220px;
+    }
+
+    .content table {
+      width: 100%;
+    }
+
+    .content table {
+      background-color: #f2f2f2;
+    }
+
+    td,
+    th {
+      padding: 8px;
+      text-align: left;
+    }
+    .right-align {
+      text-align: right;
+    }
+    ​ p {
+      margin: 0;
+    }
+
+    .clinic-name {
+      color: black;
+    }
+
+    .center-align {
+      text-align: center;
+    }
+
+    .center-align-prescription {
+      text-align: center;
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      /* Vertical text */
+      white-space: nowrap;
+      /* Prevent text wrapping */
+    }
+
+    .vertical-lr {
+      writing-mode: vertical-lr;
+    }
+
+    .box {
+      color: black;
+      padding: 10px;
+      margin: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    td.rotate {
+      rotate: -90;
+      text-rotate: 90;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      transform-origin: center;
+      background-color: #f2f2f2;
+    }
+
+    table.outline {
+      border-collapse: collapse;
+    }
+
+    .container {
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .fixed-bottom {
+      position: absolute;
+      bottom: 0;
+      background-color: #f2f2f2;
+      width: 100%;
+    }
+
+
+    .outline {
+      border: 2px solid black;
+    }
+
+    .gradient-background {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <table style="background-color: #f2f2f2; color:black; width:100%;">
+    <tr>
+      <td colspan="2"><img src="asset/img/logo.jpeg" alt="hospital logo" width="50"
+          height="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        We Treat God Cure</td>
+    </tr>
+    <tr>
+      <td class="gradient-background" colspan="2">
+        <h2>SELVIN MULTI SPECIALITY DENTAL CLINIC & IMPLANT CENTRE
+      </td>
+    </tr>
+    <tr>
+      <td>Rtn.S.SELVINRAJ, BDS., MDS., (PROSTHODONTICS)</td>
+      <td style="text-align: right;"> Dr. CATHRINE SELVINRAJ, BDS., (GDC, Chennai)</td>
+    </tr>
+    <tr>
+      <td>DN.Ortho (ITALY), FICOI (USA)</td>
+      <td style="text-align: right;">பல் முகம் சீரமைப்பு மருத்துவர்</td>
+    </tr>
+    <tr>
+      <td>Mastership in Digital Esthetics (MDS), EGYPT</td>
+      <td style="text-align: right;">CONSULTING TIME : 9:00 AM - 2:00 PM</td>
+    </tr>
+    <tr>
+      <td>Consultant Implantologist & Maxillofacial Prosthodonist</td>
+      <td style="text-align: right;">CONSULTING TIME : 4:00 PM - 8:30 PM</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">Formerly Hon.Senior House Officer, CMC HOSPITAL, Vellore</td>
+    </tr>
+  </table>
+  <hr>
+  <br>
+  <div class="content">
+    <table border="0">
+      <tr>
+        <th style="width:150px;">Patient Name:</th>
+        <td>{patientName}</td>
+        <th>Age:</th>
+        <td>{age}</td>
+        <th>Gender:</th>
+        <td>{genderFirstLetter}</td>
+        <th>Date:</th>
+        <td>{prescription_date}</td>
+      </tr>
+    </table>
+    <hr>
+    <table border="0" cellspacing="0" cellpadding="5" style="border-collapse: collapse; border: 1px solid black; ">
+      <thead>
+        <tr>
+          <th style="text-align: left; width: 50px; border-right: 1px solid black;  border-bottom: 1px solid black;">NO</th>
+          <th style="text-align: center; width: 500px; border-right: 1px solid black;  border-bottom: 1px solid black;">Medicine</th>
+          <td class="box rotate">காலை</td>
+          <td class="box rotate">மதியம்</td>
+          <td class="box rotate">இரவு</td>
+        </tr>
+      </thead>
+        <tr>
+        {prescriptionItem}</tr>
+    </table>
+    <hr >
+  </div>
+  <div>
+    <footer>
+      <table style="background-color: #f2f2f2; color:black; width:100%;">
+        <tr>
+          <td>Do Not Substitute</td>
+          <td style="text-align: right;">அடுத்து வரும்பொழுது இந்த சீட்டை கொண்டு வரவும்</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">SANKARANKOVIL MUKKU ,CHARAPATTI ROAD,RAJAPALAYAM - 626 117,CELL
+            :94 88 00 66 08</td>
+        </tr>
+      </table>
+  </div>
+  </footer>

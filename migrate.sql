@@ -1,0 +1,2 @@
+ALTER TABLE `master_config_id` ADD `status` INT NOT NULL DEFAULT '1' AFTER `last_update_on`;
+ALTER TABLE `master_config_id` CHANGE `master_config_idName` `master_config_idName` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;

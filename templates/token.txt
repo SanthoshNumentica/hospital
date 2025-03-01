@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-sm-12 text-center" style="margin-top:5px;">
+        <strong>Welcome to</strong><br>
+        <img src="{logo_src}"/>
+    </div>
+    <div class="col-sm-12 text-left">
+        {token_date}
+    </div>
+    <div class="col-sm-12 text-right">
+        {token_time}
+    </div>
+    <div class="col-sm-12 text-center mt-1 mb-3">
+            Your Token Number is
+    </div>
+    <div class="col-sm-12 text-center mt-1 mb-3" style="font-size:4rem;">
+            <strong>
+                {token_no}
+            </strong>
+    </div>
+     <div class="col-sm-12 text-center mb-1 mt-3">
+           Please wait for your turn.<br>Thanks for your cooperation.
+    </div>
+</div>

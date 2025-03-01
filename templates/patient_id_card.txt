@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card-header {
+            background-color: rgb(24, 34, 90);
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+        .card-body {
+            flex: 1;
+            padding: 1em;
+        }
+
+        .patient-info {
+            margin-bottom: 1em;
+            font-size:20px;
+        }
+
+        .patient-info label {
+            font-weight: bold;
+        }
+
+        .qr-code-container {
+            float: right;
+            margin-top: 10px;
+            margin-right: 0px;
+        }
+
+        #qr-code-img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        .card-footer {
+            background-color: rgb(24, 34, 90);
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <img src="{logo_src}" alt="logo">{companyName}
+            </div>
+            
+            <div class="card-body">
+                <div class="qr-code-container">
+                    <img class="qr-code-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={patient_id}">
+                </div>
+                <h5 style="text-align:center;"><b>Patient Identity Card</b></h5>
+                <table>
+                <tbody >
+                <tr>
+                  <td class="patient-info">Name</td>
+                    <td>:</td>
+                    <td class="patient-info"><b>{patient_fullName}</b></td>
+                </tr>
+                 <tr>
+                  <td class="patient-info">Patient ID</td>
+                    <td>:</td>
+                    <td class="patient-info"><b>{patient_id}</b></td>
+                </tr>
+                 <tr>
+                  <td class="patient-info">Mobile</td>
+                    <td>:</td>
+                    <td class="patient-info"><b>{mobile_no}</b></td>
+                </tr>
+                </tbody>
+                </table
+            </div>
+
+            <div class="card-footer">
+                {companyAddress_1}  {companyAddress_2} - {companyEmail_id} {companyMobile_no}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
